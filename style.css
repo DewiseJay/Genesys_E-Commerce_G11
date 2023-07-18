@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    letter-spacing: 1.5px;
+}
+
+.container {
+  color: white;
+  width: 40vw;
+  margin: 100px auto;
+  padding: 45px;
+  line-height: 30px;
+  text-align: center;
+}
+.container span{
+  padding: 25px;
+  text-align: center;
+  font-size: 1.4rem;
+  display: block;
+  color: #000;
+}
+.container .login{
+  color: #85736e;
+}
+.container span a{
+  color: #7c2d14;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+h1{
+  text-transform: capitalize;
+  color: #9b4429;
+}
+form label{
+  color: #000;
+  font-size: 1.4rem;
+  margin-bottom: 100px;
+
+}
+input {
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 25vw;
+  outline: none;
+}
+.form{
+  line-height: 50px;
+width: 25vw;
+text-transform: capitalize;
+display: inline-block;
+text-align: left;
+margin-bottom: 10px;
+
+}
+.form h4{
+  float: right;
+  color: #85736e
+}
+.btn {
+  width: 25vw;
+  padding: 15px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #9b4429;
+}
+.btn1{
+  background-color: inherit;
+  border-color: #333;
+  color: #000;
+   background-color: inherit;
+  background-image: url("IMAGES/devicon_google.png");
+  background-repeat: no-repeat;
+  background-position: 50px 14px;
+}
+.btn:hover {
+  color: #9b4429;
+  border-radius: 5px;
+  background-color: #e4d7d4;
+}

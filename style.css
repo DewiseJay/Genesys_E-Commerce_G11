@@ -10,7 +10,7 @@ body{
     letter-spacing: 1.5px;
 }
 
-.container {
+.welcome_container {
   color: white;
   width: 40vw;
   margin: 100px auto;
@@ -18,17 +18,17 @@ body{
   line-height: 30px;
   text-align: center;
 }
-.container span{
+.welcome_container span{
   padding: 25px;
   text-align: center;
   font-size: 1.4rem;
   display: block;
   color: #000;
 }
-.container .login{
+.welcome_container .login{
   color: #85736e;
 }
-.container span a{
+.welcome_container span a{
   color: #7c2d14;
   text-decoration: none;
   text-transform: capitalize;
@@ -86,3 +86,31 @@ margin-bottom: 10px;
   border-radius: 5px;
   background-color: #e4d7d4;
 }
+
+/* @media screen and (min-width:600px){     
+  body{         
+  width: 100%;         
+  display: flex;         
+  flex-direction: column;         
+  flex-wrap: nowrap;         
+  background-color: lightgreen;       
+} 
+}      
+@media screen and (max-width: 900px) {     
+  body{         
+    width: 100%;         
+    display: flex;         
+    flex-direction: row;         
+    flex-wrap: nowrap;         
+    background-color: red;     
+  } 
+}      
+@media screen and (max-width: 600px) {     
+  body{         
+    width: 100%;         
+    display: flex;         
+    flex-direction: column;         
+    flex-wrap: nowrap;         
+    background-color: lightblue;     
+  } 
+} */

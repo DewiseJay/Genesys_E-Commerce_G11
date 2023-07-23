@@ -7,9 +7,9 @@
     <meta name="author" content="Genesys"/>
     <meta name="keywords" content="Work,Business,Technology, E-commerce,"/>
     <meta name="description" content="An E-commerce Website"/>
-    <title>HIVEMART</title>
+    <title>SIGN UP PAGE</title>
     <!-- External CSS file link -->
-    <link rel="stylesheet" href="./style.css" type="text/css"/>
+    <link rel="stylesheet" href="./CSS/Login_reg.css" type="text/css"/>
     <!-- online icons from  www.fontawesome.com-->
     <script src="https://kit.fontawesome.com/7d43ec513a.js" crossorigin="anonymous"></script>
   </head>
@@ -21,9 +21,9 @@
       <button class="btn btn1">sign in with google</button>
       <span>or</span>
       <div class="form">
-        <form>
-          <label for="text">full name</label>
-          <input type="text" name="name" id="text" required placeholder="Enter your full name"/>
+        <form action="./sign_in.html">
+          <label for="full_name">full name</label>
+          <input type="text" name="name" id="full_name" required placeholder="Enter your full name"/>
           <label for="email">email</label>
           <input type="email" name="email" id="email" required placeholder="Enter your email"/>
           <label for="password">password</label>
@@ -32,11 +32,12 @@
           <input type="password" name="password" id="password" required placeholder="Enter your password"/>
         </form>
       </div>
-      <button class="btn">sign up</button>
+      <button class="btn" onclick="addData()">sign up</button>
       <span>
         Already have an account?
         <a href="./sign_in.html">sign in</a>
       </span>
     </div>
+    <script src="./JS/main.js"></script>
   </body>
 </html>

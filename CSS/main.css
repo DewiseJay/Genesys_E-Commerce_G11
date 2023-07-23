@@ -189,12 +189,13 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
 .sidebar{
     margin: 5px 35px;
     background-color: #7c2d14;
-    height: 442px;
+    height: 431px;
     width: 228px;
     position: fixed;
     transform: translateX(-300px);
     transition: transform 250ms ease-in-out;
-    border-radius: 4px;
+    border-radius: 10px;
+    z-index: 10;
 }
 
 .sidebar ul li{
@@ -213,7 +214,6 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
     text-align: justify;
     font-size: 1.2rem;
     display: block;
-    border-bottom: 1px solid rgba(225, 225, 255, 0.34);
 }
 .header_categories .menu_items{
     width: 100%;
@@ -227,20 +227,19 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
 .carousel_container{
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    margin: 2px 0;
     width: 100%;
-    
 }
 
 .slide_section{
-    width: 950px;
+    max-width: 70vw;
     position: absolute;
-    top: 250px;
+    margin: 5px;
+    left: 8%;
     height: 51.5vh;
-    border: 12px solid #8e8a8a;
-    gap: 10px;
-    border-radius: 5px;
     overflow: hidden;
+    border-radius: 12px;
+
 }
 .img_carousel{
     width: 100%;
@@ -248,7 +247,10 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
     animation: slide 16s infinite;
 }
 .img_carousel img{
-    width: 100%;
+    padding: 5px;
+    border-radius: 12px;
+    min-width: 70vw;
+    max-height: 52vh;
 }
 @keyframes slide{
     0%{
@@ -276,8 +278,9 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
         transform: translateX(-300%);
     }
 }
+
 .blinking_container{
-    margin-left: 73%;
+    margin-left: 80%;
 }
 .blinking_text {
     position: relative;
@@ -288,7 +291,7 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
     text-align: center;
     color: white;
     font-size: 2.5rem;
-    margin: 20px 0;
+    margin: 15px 0;
     padding: 50px 60px;
     text-transform: uppercase;   
 }
@@ -326,7 +329,7 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
 .product_header{
     display: inline-block;
     border-radius: 12px;
-    margin: 10px 0 10px 18%;
+    margin: 10px 0 10px 7.5%;
     background-color: white;
     padding: 8px 15px;
     border-radius: 12px;
@@ -353,6 +356,7 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
     border-radius: 12px;
     margin: 5px;
     padding: 5px;
+    max-width: 70vw;
 }
 .product_items h3{
     line-height: 32px;
@@ -384,6 +388,7 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
     padding: 20px 72px;
    }
    .footer_items{
+    line-height: 30px;
     width: 30%;
     display: inline-block;
    }
@@ -401,7 +406,7 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
     border-radius: 50%;
     padding: 5px;
     margin-left: 10px;
-    background-color: #ffb59f;
+    background-color: #FFB59F;
 }
 .news a:hover{
     color: #3a0a00;
@@ -418,7 +423,7 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
     font-weight: 500;
    }
    .subscribe{
-  color: white;
+  color: #FFDBD1;
   border: 2px solid #3a0a00;
   border-radius: 10px;
   font-size: 1rem;
@@ -430,20 +435,22 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
   outline: none;
    }
    .subscribe::placeholder{
-    color: rgb(255, 255, 255);
+    color: #FFB59F;
    }
    .email_subscribe .btn{
-    color: white;
-    background-color: #3A0A00;
+    color: #3A0A00;
+    background-color: #FFB59F;
     border-radius: 10px;
-    height: 5.5vh;
+    outline: none;
+    height: 5vh;
     width: 6vw;
+    font-weight: 400;
     text-transform: capitalize;
-    font-size: 1.3rem;
+    font-size: 1rem;
    }
    footer h1{
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 2px;
    }
 
@@ -465,96 +472,41 @@ input[type = "checkbox"]:checked ~ .toggle_icon > .bar-bottom{
    }
 
 /* For Responsive Screen */
-.checkbtn{
-    font-size: 30px;
-    color: #7c2d14;
-    margin-right: 40px;
-    line-height: 80px;
+@media (max-width: 73em){
+  .nav-list{
     display: none;
-}
-#check{
-    display: none;
+  }
+  .img-container, .img-grid{
+  width: 90%;
 }
 
- @media (max-width: 952px){
-    .logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    .navbar ul li a{
-        font-size: 16px;
-    }
+  
 }
- @media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    .navbar ul{
-        position: fixed;
-        width: 220px;
-        height: 50vh;
-        background-color: #7c2d14;
-        top: 80px;
-        left: 0;
-        margin: 5px 35px;
-                
-        /* margin: 5px 35px;
-    height: 442px;
-    width: 228px; */
-    /* transform: translateX(-300px);
-    transition: transform 250ms ease-in-out; */
-    border-radius: 4px;
-    }
-    .navbar ul li{
-        display: block;
-    }
-    .navbar ul li a{
-    font-size: 20px;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    text-align: justify;
-    font-size: 1.2rem;
-    display: block;
-    border-bottom: 1px solid rgba(225, 225, 255, 0.34);
-    }
-    .navbar a:hover{
-    background-color: #e4d7d4;
-    transition: all 0.3;
-    color:#3A0A00;
+@media (max-width: 26em){
+  .logo{
+    display: none;
+  }
+  .business-container{
+  width: 90%;
+}
+.img-container, .img-grid{
+  width: 95%;
+}
+  
+}
 
-}
-#check:checked ~ ul{
-    left: 0;
-}
- }
- 
-@media screen and (min-width:600px){
-    body{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        background-color: lightgray;
-    }
-}
-    
-@media screen and (max-width: 900px) {
-    body{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        background-color: lightgray;
-    }
-}
-    
 @media screen and (max-width: 600px) {
-    body{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        background-color: lightgray;
-    }
+  .column {
+      width: 100%;
+  }
+  .container {
+     height: 257px;
+     line-height: 20px;
+  }
+  .text {
+    width: 100%;
+  }
+  .cta-btn-footer {
+    margin: 0 100px 200px 200px;
+  }
 }

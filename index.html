@@ -7,6 +7,7 @@
     <meta name="author" content="Genesys"/>
     <meta name="keywords" content="Work,Business,Technology, E-commerce,"/>
     <meta name="description" content="An E-commerce Website"/>
+    <link rel="icon" href="./IMAGES/logo.png" type="image/x-icon">
     <title>HIVEMART</title>
     <!-- External CSS file link -->
     <link rel="stylesheet" href="./CSS/main.css" type="text/css"/>
@@ -20,14 +21,16 @@
       <div class="nav">
         <!-- logo div -->
         <div class="logo">
-          <img src="./IMAGES/logo.png" alt="HiveMart Logo"/>
+          <a href="./index.html" id="top">
+            <img src="./IMAGES/logo.png" alt="HiveMart Logo"/>
+          </a>
         </div>
         <!-- end of logo div -->
         <!-- navbar -->
         <div class="navbar">
           <ul>
             <li>
-              <a href="#" id="active">home</a>
+              <a href="#">home</a>
             </li>
             <li>
               <a href="#">products</a>
@@ -173,13 +176,13 @@
         <div class="product_header">
           <div class="all_Products">
             <div class="product_items">
-              <a href="./product_description.html">
-                <img src="./IMAGES/Phones & Tablets.png" alt="Phones and Tablets"/>
-                <h3>Phones & Tablets</h3>
+              <a href="./first_product_description.html">
+                <img src="./IMAGES/A school bag.png" alt="A School Bag"/>
+                <h3>A School Bag</h3>
               </a>
             </div>
             <div class="product_items">
-              <a href="#">
+              <a href="second_product_description.html">
                 <img src="./IMAGES/Fashon.png" alt="A Woman"/>
                 <h3>Fashon</h3>
               </a>
@@ -432,6 +435,9 @@
       <!-- footer -->
       <footer>
         <div class="footer_items">
+          <a href="#top">
+            <img src="./IMAGES/black and white logo.png" alt="HiveMart Logo"/>
+          </a>
           <h1>about hivemart</h1>
           <ul>
             <li>
@@ -485,25 +491,27 @@
             </li>
           </ul>
         </div>
-        <div class="footer_items news">
+        <div class="footer_items">
           <h1 class="newsletter">Newsletter</h1>
-          <span>Get the latest updates on our latest offers!</span>
-          <div class="email_subscribe">
-            <input type="email" class="subscribe" id="subscribe" placeholder="Enter your email address"/>
-            <label for="subscribe">
-              <button class="btn">subscribe</button>
-            </label>
+          <div class="news">
+            <span>Get the latest updates on our latest offers!</span>
+            <div class="email_subscribe">
+              <input type="email" class="subscribe" id="subscribe" placeholder="Enter your email address"/>
+              <label for="subscribe">
+                <button class="btn">subscribe</button>
+              </label>
+            </div>
+            <h2>Connect with us</h2>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </div>
-          <h2>Connect with us</h2>
-          <a href="#">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
         </div>
       </footer>
       <!-- end of footer -->
